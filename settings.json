@@ -1,0 +1,42 @@
+{
+    /* Telemetry */
+    "telemetry.telemetryLevel": "error",
+
+    /* Editor */
+    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.lineHeight": 21,
+    "editor.cursorWidth": 3,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.linkedEditing": true,
+    "editor.guides.bracketPairs": true,
+    "editor.lineNumbers": "off",
+    "editor.minimap.enabled": false,
+
+    /* Emmet */
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "editor.snippetSuggestions": "top",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "typescript": "typescriptreact",
+    },
+    "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+
+    /* Workbench */
+    "workbench.tree.enableStickyScroll": true,
+    "workbench.colorTheme": "Kanagawa Wave",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.showTabs": "none",
+
+    /* Breadcrumbs */
+    "breadcrumbs.enabled": false,
+
+    /* Material Icons */
+    "material-icon-theme.opacity": 0.75,
+    "material-icon-theme.saturation": 0.9
+}
