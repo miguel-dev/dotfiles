@@ -37,6 +37,6 @@
     "breadcrumbs.enabled": false,
 
     /* Material Icons */
-    "material-icon-theme.opacity": 0.75,
+    "material-icon-theme.opacity": 0.73,
     "material-icon-theme.saturation": 0.9
 }
