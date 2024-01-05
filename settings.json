@@ -38,5 +38,9 @@
 
     /* Material Icons */
     "material-icon-theme.opacity": 0.73,
-    "material-icon-theme.saturation": 0.9
+    "material-icon-theme.saturation": 0.9,
+
+    /* VIM */
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
 }
