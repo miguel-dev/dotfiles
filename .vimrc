@@ -3,5 +3,5 @@ syntax on                    " Syntax highlighting
 set number                   " Show current line number
 set relativenumber           " Show relative line numbers
 
-" Change line color        
+" Change line number color        
 highlight LineNr ctermfg=white 
