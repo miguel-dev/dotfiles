@@ -37,9 +37,27 @@
 
     /* Material Icons */
     "material-icon-theme.opacity": 0.73,
+    "material-icon-theme.saturation": 0.9,
 
     /* VIM */
+    "vim.leader": "<space>",
     "vim.hlsearch": true,
     "vim.useSystemClipboard": true,
     "vim.cursorStylePerMode.insert": "block",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.view.explorer"]
+        }
+    ]
 }
