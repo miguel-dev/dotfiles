@@ -29,8 +29,8 @@
     "workbench.tree.enableStickyScroll": true,
     "workbench.colorTheme": "Kanagawa Wave",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right",
     "workbench.activityBar.location": "hidden",
+    "workbench.sideBar.location": "right",
     "workbench.editor.showTabs": "none",
 
     /* Breadcrumbs */
@@ -56,12 +56,16 @@
             "commands": [":nohl"]
         },
         {
+            "before": ["<leader>", "p"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        {
             "before": ["<leader>", "e"],
             "commands": ["workbench.view.explorer"]
         },
         {
-            "before": ["<leader>", "p"],
-            "commands": ["workbench.action.showCommands"]
+            "before": ["<leader>", "d"],
+            "commands": ["workbench.view.debug"]
         }
-    ]
+    ],
 }
