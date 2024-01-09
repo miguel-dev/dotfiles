@@ -19,7 +19,7 @@ setopt HIST_IGNORE_ALL_DUPS
 #
 
 # Set editor default keymap to emacs (`-e`) or vi (`-v`)
-bindkey -e
+# bindkey -v
 
 # Prompt for spelling correction of commands.
 #setopt CORRECT
@@ -146,4 +146,6 @@ export LC_ALL=en_US.UTF-8
 zmodload zsh/nearcolor
 zstyle :prompt:pure:prompt:success color '#FF8C00'
 
+# iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

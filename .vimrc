@@ -1,7 +1,9 @@
 let &fillchars ..= ',eob: '  " Hide tildes at end of buffer
-syntax on                    " Syntax highlighting
+syntax enable                " Syntax highlighting
+set clipboard=unnamed        " Use clipboard when copying or pasting
 set number                   " Show current line number
 set relativenumber           " Show relative line numbers
+set cursorline               " Highlight the line of the cursor 
+"set termguicolors
 
-" Change line number color        
-highlight LineNr ctermfg=white 
+colorscheme molokai          " Set molokai color scheme

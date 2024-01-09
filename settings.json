@@ -41,8 +41,8 @@
     "material-icon-theme.saturation": 0.9,
 
     /* VIM */
-    "vim.hlsearch": true,
     "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
     "vim.leader": "<space>",
     "vim.insertModeKeyBindings": [
         {
