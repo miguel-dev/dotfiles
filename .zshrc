@@ -138,7 +138,7 @@ eval "$(zoxide init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Bat Setup
-export BAT_THEME="1337"
+export BAT_THEME="OneHalfDark"
 
 # Pure Prompt Setup
 export LANG=en_US.UTF-8

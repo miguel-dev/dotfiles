@@ -27,7 +27,7 @@
 
     /* Workbench */
     "workbench.tree.enableStickyScroll": true,
-    "workbench.colorTheme": "Kanagawa Wave",
+    "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.activityBar.location": "hidden",
     "workbench.sideBar.location": "right",
@@ -50,10 +50,15 @@
             "after": ["<Esc>"]
         }
     ],
-    "vim.normalModeKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindings": [
         {
-            "before": ["<C-n>"],
-            "commands": [":nohl"]
+            "before": ["<C-l>"],
+            "commands": [":nohl"],
+            "silent": true
+        },
+        {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.files.save"]
         },
         {
             "before": ["<leader>", "p"],
