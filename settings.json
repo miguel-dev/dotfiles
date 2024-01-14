@@ -44,8 +44,7 @@
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,     
     
-    // To improve performance",
-    "extensions.experimental.affinity": {
+    "extensions.experimental.affinity": {   // To improve performance"
         "vscodevim.vim": 1
     },
     
