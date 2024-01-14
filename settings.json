@@ -42,7 +42,13 @@
 
     /* VIM */
     "vim.useSystemClipboard": true,
-    "vim.hlsearch": true,
+    "vim.hlsearch": true,     
+    
+    // To improve performance",
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    
     "vim.leader": "<space>",
     "vim.insertModeKeyBindings": [
         {
@@ -72,5 +78,5 @@
             "before": ["<leader>", "d"],
             "commands": ["workbench.view.debug"]
         }
-    ],
+    ]
 }
