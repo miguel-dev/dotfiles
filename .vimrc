@@ -5,6 +5,7 @@ set number                   " Show current line number
 set relativenumber           " Show relative line numbers
 set cursorline               " Highlight the line of the cursor 
 set termguicolors            " Enable 24 bit colors
+set spell spelllang=en_us    " Enable spellchecking
 
 colorscheme one              " Vim one color scheme
 set background=dark          " Dark version of vim one
@@ -23,3 +24,6 @@ nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
+nnoremap f 1z=
+nnoremap s :set spell!
+vnoremap . :norm.<CR>
