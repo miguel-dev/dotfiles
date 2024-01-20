@@ -40,16 +40,16 @@ set incsearch                " Show matches while typing
 set ignorecase               " Searches case insensitive
 set smartcase                " Except if capital letters are used
 
-" Substiutions
+" Substitutions
 set gdefault                 " Apply substitutions globally on lines
 
 " Remaps
 
-"Extended Regexes
+" Extended Regexes
 nnoremap / /\v
 vnoremap / /\v
 
-"Move to matching bracket
+" Move to matching bracket
 nnoremap <tab> %
 vnoremap <tab> %
 
@@ -65,6 +65,15 @@ nnoremap <Leader>Q :q!<CR>
 
 " Fast escaping
 inoremap jj <ESC>
+
+" Split windows
+nnoremap <leader>s <C-w>v<C-w>l
+
+" Move around split windows
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " Spelling
 nnoremap f 1z=
