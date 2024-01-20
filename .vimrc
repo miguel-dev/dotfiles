@@ -1,20 +1,23 @@
-let &fillchars ..= ',eob: '    " Hide tildes at end of buffer
-set spell spelllang=en_us      " Enable spellchecking
 syntax enable                  " Syntax highlighting
+set spell spelllang=en_us      " Enable spellchecking
 set clipboard=unnamed          " Use clipboard when copying or pasting
 set termguicolors              " Enable 24 bit colors
 set visualbell                 " Enable visual bell
 set number                     " Show current line number
 set relativenumber             " Show relative line numbers
-set ruler                      " Shows line and column number of cursor
 set cursorline                 " Highlight the line of the cursor
+set ruler                      " Shows line and column number of cursor
 set laststatus=2               " Enable status line
 set noshowmode                 " Don't show the current mode
 set showcmd                    " Show partial command
-set showmatch                  " Hightlight the matching bracket or brace
 set list                       " Shows hidden characters
-set listchars=tab:▸\ ,eol:¬    " Textmate's symbols for tab and CR
-set backspace=indent,eol,start " Set backspace to behave like in OSX
+set listchars=tab:▸\ ,eol:¬    " Textmate's symbols for tab and eol
+
+" Set backspace to behave like in OSX
+set backspace=indent,eol,start
+
+" Hide tildes at end of buffer
+let &fillchars ..= ',eob: '
 
 " VIM colorscheme
 colorscheme one              " Vim one color scheme
@@ -24,6 +27,9 @@ set background=dark          " Dark version of vim one
 let g:lightline = {
      \ 'colorscheme': 'one',
      \ }
+
+" Hightlight the matching bracket or brace
+set showmatch
 
 " Indentation
 set autoindent
@@ -47,7 +53,7 @@ vnoremap / /\v
 nnoremap <tab> %
 vnoremap <tab> %
 
-" Remove highlighting
+" Remove highlighting after search
 nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 
 " Leader key mappings
@@ -62,4 +68,5 @@ nnoremap <Leader>Q :q!<CR>
 nnoremap f 1z=
 nnoremap s :set spell!
 
+" Repeat an action to selected lines in visual mode
 vnoremap . :norm.<CR>
