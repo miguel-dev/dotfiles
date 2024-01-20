@@ -35,10 +35,10 @@ set showmatch
 set autoindent
 
 " Search
-set ignorecase               " Searches case insensitive
-set smartcase                " Except if capital letters are used
 set hlsearch                 " Highlight all matches
 set incsearch                " Show matches while typing
+set ignorecase               " Searches case insensitive
+set smartcase                " Except if capital letters are used
 
 " Substiutions
 set gdefault                 " Apply substitutions globally on lines
