@@ -59,10 +59,12 @@ nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 " Leader key mappings
 nnoremap <Space> <Nop>
 map <Space> <Leader>
-inoremap jj <ESC>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
+
+" Fast escaping
+inoremap jj <ESC>
 
 " Spelling
 nnoremap f 1z=
