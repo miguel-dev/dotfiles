@@ -28,11 +28,18 @@ let g:lightline = {
      \ 'colorscheme': 'one',
      \ }
 
+" Color column shows if line is long
+set colorcolumn=80
+
 " Hightlight the matching bracket or brace
 set showmatch
 
 " Indentation
 set autoindent
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 
 " Search
 set hlsearch                 " Highlight all matches
@@ -81,3 +88,12 @@ nnoremap s :set spell!
 
 " Repeat an action to selected lines in visual mode
 vnoremap . :norm.<CR>
+
+" Plugins
+
+" Emmet
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
+" Fzf integration
+set rtp+=/opt/homebrew/bin/fzf
