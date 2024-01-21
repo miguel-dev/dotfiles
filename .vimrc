@@ -12,6 +12,8 @@ set noshowmode                 " Don't show the current mode
 set showcmd                    " Show partial command
 set list                       " Shows hidden characters
 set listchars=tab:▸\ ,eol:¬    " Textmate's symbols for tab and eol
+set wildmenu                   " Enhanced command line completion
+set wildmode=list:longest      " Completion mode with wildchar
 
 " Set backspace to behave like in OSX
 set backspace=indent,eol,start
