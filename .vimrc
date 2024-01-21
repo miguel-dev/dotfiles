@@ -10,10 +10,10 @@ set ruler                      " Shows line and column number of cursor
 set laststatus=2               " Enable status line
 set noshowmode                 " Don't show the current mode
 set showcmd                    " Show partial command
-set list                       " Shows hidden characters
-set listchars=tab:▸\ ,eol:¬    " Textmate's symbols for tab and eol
 set wildmenu                   " Enhanced command line completion
 set wildmode=list:longest      " Completion mode with wildchar
+set list                       " Shows hidden characters
+set listchars=tab:▸\ ,eol:¬    " Textmate's symbols for tab and eol
 
 " Set backspace to behave like in OSX
 set backspace=indent,eol,start
