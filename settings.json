@@ -58,7 +58,7 @@
     ],
     "vim.normalModeKeyBindings": [
         {
-            "before": ["<C-l>"],
+            "before": ["<leader>", "l"],
             "commands": [":nohl"],
             "silent": true
         },

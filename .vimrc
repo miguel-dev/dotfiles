@@ -61,7 +61,7 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 " Remove highlighting after search
-nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+nnoremap <silent> <leader>l :nohlsearch<CR><C-L>
 
 " Leader key mappings
 nnoremap <Space> <Nop>
