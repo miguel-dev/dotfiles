@@ -62,15 +62,15 @@ vnoremap / /\v
 nnoremap <tab> %
 vnoremap <tab> %
 
-" Remove highlighting after search
-nnoremap <silent> <leader>l :nohlsearch<CR><C-L>
-
 " Leader key mappings
 nnoremap <Space> <Nop>
 map <Space> <Leader>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
+
+" Remove highlighting after search
+nnoremap <silent> <leader>l :nohlsearch<CR><C-L>
 
 " Fast escaping
 inoremap jj <ESC>
