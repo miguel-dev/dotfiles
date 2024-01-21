@@ -96,6 +96,3 @@ vnoremap . :norm.<CR>
 " Emmet
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
-
-" Fzf integration
-set rtp+=/opt/homebrew/bin/fzf
