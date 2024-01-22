@@ -30,7 +30,7 @@ set undodir=~/.vim/undo-dir
 set undofile
 
 " Hide tildes at end of buffer
-let &fillchars ..= ',eob: ' 
+let &fillchars ..= ',eob: '
 
 " VIM colorscheme
 colorscheme one              " Vim one color scheme
