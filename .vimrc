@@ -18,6 +18,16 @@ set backspace=indent,eol,start " Set backspace to behave like in OSX
 set showmatch                  " Hightlight the matching bracket or brace
 set visualbell                 " Enable visual bell
 
+" Persistent Undo
+if !isdirectory($HOME."/.vim")
+    call mkdir($HOME."/.vim", "", 0770)
+endif
+if !isdirectory($HOME."/.vim/undo-dir")
+    call mkdir($HOME."/.vim/undo-dir", "", 0700)
+endif
+set undodir=~/.vim/undo-dir
+set undofile
+
 " Hide tildes at end of buffer
 let &fillchars ..= ',eob: '
 
