@@ -44,6 +44,7 @@ let g:lightline = {
 " Indentation
 set autoindent
 filetype plugin indent on
+au FileType html set et sts=2 sw=2 ts=2
 "set tabstop=4
 "set shiftwidth=4
 "set softtabstop=4
