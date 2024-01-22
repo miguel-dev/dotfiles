@@ -1,23 +1,23 @@
-syntax enable                  " Syntax highlighting
-set spell spelllang=en_us      " Enable spellchecking
-set clipboard=unnamed          " Use clipboard when copying or pasting
-set termguicolors              " Enable 24 bit colors
-set list                       " Shows hidden characters
-set listchars=tab:▸\ ,eol:¬    " Textmate's symbols for tab and eol
-set autowrite                  " Write before changing files
-set number                     " Show current line number
-set relativenumber             " Show relative line numbers
-set cursorline                 " Highlight the line of the cursor
-set ruler                      " Shows line and column number of cursor
-set laststatus=2               " Enable status line
-set noshowmode                 " Don't show the current mode
-set showcmd                    " Show partial command
-set wildmenu                   " Enhanced command line completion
-set wildmode=list:longest      " Completion mode with wildchar
-set colorcolumn=80             " Color column shows lime limit
-set backspace=indent,eol,start " Set backspace to behave like in OSX
-set showmatch                  " Hightlight the matching bracket or brace
-set visualbell                 " Enable visual bell
+syntax enable                           " Syntax highlighting
+set spell spelllang=en_us               " Enable spellchecking
+set clipboard=unnamed                   " The unnamed register is *
+set termguicolors                       " Enable 24 bit colors
+set list                                " Shows hidden characters
+set listchars=tab:▸\ ,eol:¬,trail:-     " Textmate's symbols for tab and eol
+set autowrite                           " Write before changing files
+set number                              " Show current line number
+set relativenumber                      " Show relative line numbers
+set cursorline                          " Highlight the line of the cursor
+set ruler                               " Line and column number of cursor
+set laststatus=2                        " Enable status line
+set noshowmode                          " Don't show the current mode
+set showcmd                             " Show partial command
+set wildmenu                            " Enhanced command line completion
+set wildmode=list:longest               " Completion mode with wildchar
+set colorcolumn=80                      " Color column shows lime limit
+set backspace=indent,eol,start          " Set backspace to behave like in OSX
+set showmatch                           " Hightlight the matching bracket
+set visualbell                          " Enable visual bell
 
 " Persistent Undo
 if !isdirectory($HOME."/.vim")
