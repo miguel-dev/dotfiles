@@ -71,6 +71,7 @@ map <Space> <Leader>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
+nnoremap <Leader>x :x<CR>
 
 " Remove highlighting after search
 nnoremap <silent> <leader>l :nohlsearch<CR><C-L>
