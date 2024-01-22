@@ -30,7 +30,7 @@ set undodir=~/.vim/undo-dir
 set undofile
 
 " Hide tildes at end of buffer
-let &fillchars ..= ',eob: '
+let &fillchars ..= ',eob: ' 
 
 " VIM colorscheme
 colorscheme one              " Vim one color scheme
@@ -44,7 +44,7 @@ let g:lightline = {
 " Indentation
 set autoindent
 filetype plugin indent on
-autocmd FileType html setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2 
+autocmd FileType html setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
 " Search
 set hlsearch                 " Highlight all matches
