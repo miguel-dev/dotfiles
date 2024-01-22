@@ -4,6 +4,7 @@ set clipboard=unnamed          " Use clipboard when copying or pasting
 set termguicolors              " Enable 24 bit colors
 set list                       " Shows hidden characters
 set listchars=tab:▸\ ,eol:¬    " Textmate's symbols for tab and eol
+set autowrite                  " Write before changing files
 set number                     " Show current line number
 set relativenumber             " Show relative line numbers
 set cursorline                 " Highlight the line of the cursor
