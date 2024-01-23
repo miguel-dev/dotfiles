@@ -4,7 +4,6 @@ set clipboard=unnamed                   " The unnamed register is *
 set termguicolors                       " Enable 24 bit colors
 set list                                " Shows hidden characters
 set listchars=tab:▸\ ,eol:¬             " Textmate's symbols for tab and eol
-set autowrite                           " Write before changing files
 set number                              " Show current line number
 set relativenumber                      " Show relative line numbers
 set cursorline                          " Highlight the line of the cursor
@@ -14,7 +13,7 @@ set noshowmode                          " Don't show the current mode
 set showcmd                             " Show partial command
 set wildmenu                            " Enhanced command line completion
 set wildmode=list:longest               " Completion mode with wildchar
-set colorcolumn=80                      " Color column shows lime limit
+set colorcolumn=80                      " Color column shows line limit
 set backspace=indent,eol,start          " Set backspace to behave like in OSX
 set showmatch                           " Hightlight the matching bracket
 set visualbell                          " Enable visual bell
@@ -60,10 +59,6 @@ set gdefault                 " Apply substitutions globally on lines
 
 " Remaps
 
-" Extended Regexes
-nnoremap / /\v
-vnoremap / /\v
-
 " Move to matching bracket
 nnoremap <tab> %
 vnoremap <tab> %
@@ -73,8 +68,8 @@ nnoremap <Space> <Nop>
 map <Space> <Leader>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>Q :q!<CR>
 nnoremap <Leader>x :x<CR>
+nnoremap <Leader>Q :q!<CR>
 
 " Remove highlighting after search
 nnoremap <silent> <leader>l :nohlsearch<CR><C-L>
@@ -92,10 +87,10 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " Open .vimrc file in a split
-nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<CR>
+nnoremap <leader>e <C-w><C-v><C-l>:e $MYVIMRC<CR>
 
 " Source VIM config file
-nnoremap <leader>sv :source $MYVIMRC<CR>
+nnoremap <leader>v :source $MYVIMRC<CR>
 
 " Spelling
 nnoremap f 1z=
@@ -111,4 +106,4 @@ let g:user_emmet_install_global = 0
 augroup emmet
  autocmd!
  autocmd FileType html,css EmmetInstall
-augroup END
+augroup end
