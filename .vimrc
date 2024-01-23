@@ -1,6 +1,5 @@
 syntax enable                           " Syntax highlighting
 set spell spelllang=en_us               " Enable spellchecking
-set clipboard=unnamed                   " The unnamed register is *
 set termguicolors                       " Enable 24 bit colors
 set list                                " Shows hidden characters
 set listchars=tab:▸\ ,eol:¬             " Textmate's symbols for tab and eol
