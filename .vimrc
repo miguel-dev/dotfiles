@@ -54,9 +54,6 @@ set incsearch                " Show matches while typing
 set ignorecase               " Searches case insensitive
 set smartcase                " Except if capital letters are used
 
-" Substitutions
-set gdefault                 " Apply substitutions globally on lines
-
 " Remaps
 
 " Move to matching bracket
