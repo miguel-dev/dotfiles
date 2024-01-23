@@ -44,10 +44,10 @@ let g:lightline = {
 " Indentation
 set autoindent
 filetype plugin indent on
-augroup indent
- autocmd!
- autocmd FileType html setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
-augroup end
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
 
 " Search
 set hlsearch                 " Highlight all matches
