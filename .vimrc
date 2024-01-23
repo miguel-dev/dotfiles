@@ -3,7 +3,7 @@ set spell spelllang=en_us               " Enable spellchecking
 set clipboard=unnamed                   " The unnamed register is *
 set termguicolors                       " Enable 24 bit colors
 set list                                " Shows hidden characters
-set listchars=tab:▸\ ,eol:¬,trail:-     " Textmate's symbols for tab and eol
+set listchars=tab:▸\ ,eol:¬             " Textmate's symbols for tab and eol
 set autowrite                           " Write before changing files
 set number                              " Show current line number
 set relativenumber                      " Show relative line numbers
@@ -91,6 +91,12 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Open .vimrc file in a split
+nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<CR>
+
+" Source VIM config file
+nnoremap <leader>sv :source $MYVIMRC<CR>
+
 " Spelling
 nnoremap f 1z=
 nnoremap s :set spell!
@@ -102,4 +108,7 @@ vnoremap . :norm.<CR>
 
 " Emmet
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+augroup emmet
+ autocmd!
+ autocmd FileType html,css EmmetInstall
+augroup END
