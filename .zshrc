@@ -146,6 +146,3 @@ export LC_ALL=en_US.UTF-8
 zmodload zsh/nearcolor
 zstyle :prompt:pure:prompt:success color '#FF8C00'
 
-# iTerm2 Shell Integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
