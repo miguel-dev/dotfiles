@@ -1,0 +1,14 @@
+# Theme
+import = [ "~/.config/alacritty/themes/themes/snazzy.toml" ]
+
+[window]
+padding = { x = 10, y = 10 }
+decorations_theme_variant = "Dark"
+
+[font]
+size = 13
+normal = { family = "Jetbrains Mono", style = "Light" }
+bold = { style = "Regular" }
+
+[cursor]
+style = {blinking = "On"} 
