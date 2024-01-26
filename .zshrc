@@ -129,7 +129,7 @@ unset key
 # }}} End configuration added by Zim install
 
 # Aliases
-alias v="/usr/bin/vim"
+alias v="/opt/homebrew/bin/vim"
 
 # Zoxide Setup
 eval "$(zoxide init zsh)"
