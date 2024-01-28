@@ -66,6 +66,8 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>x :x<CR>
 nnoremap <Leader>Q :q!<CR>
+nnoremap <Leader>y "*y<CR>
+nnoremap <Leader>p "*p<CR>
 
 " Remove highlighting after search
 nnoremap <silent> <leader>l :nohlsearch<CR><C-L>
