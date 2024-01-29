@@ -129,7 +129,11 @@ unset key
 # }}} End configuration added by Zim install
 
 # Aliases
-alias v="/opt/homebrew/bin/vim"
+alias v="vim"
+alias t="tmux"
+alias tn="t new -t"
+alias ta="t a -t"
+alias tls="t ls"
 
 # Zoxide Setup
 eval "$(zoxide init zsh)"
@@ -145,4 +149,3 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 zmodload zsh/nearcolor
 zstyle :prompt:pure:prompt:success color '#FF8C00'
-
