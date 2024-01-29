@@ -2,7 +2,8 @@
 import = [ "~/.config/alacritty/themes/themes/snazzy.toml" ]
 
 [window]
-padding = { x = 10, y = 10 }
+padding = { x = 7, y = 7 }
+dynamic_padding = true
 decorations_theme_variant = "Dark"
 
 [font]
@@ -12,3 +13,6 @@ bold = { style = "Regular" }
 
 [cursor]
 style = {blinking = "On"} 
+
+[mouse]
+hide_when_typing = true
