@@ -30,7 +30,7 @@ set undofile
 let &fillchars ..= ',eob: '
 
 " Spellchecking highlighting
-augroup spellbad_hl
+augroup spellbad_hi
   autocmd!
   autocmd ColorScheme one hi SpellBad cterm=reverse
 augroup END
