@@ -29,7 +29,7 @@ set undofile
 " Hide tildes at end of buffer
 let &fillchars ..= ',eob: '
 
-# Spellchecking highlighting
+" Spellchecking highlighting
 augroup spellbad_hl
   autocmd!
   autocmd ColorScheme one hi SpellBad cterm=reverse
