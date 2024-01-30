@@ -29,6 +29,12 @@ set undofile
 " Hide tildes at end of buffer
 let &fillchars ..= ',eob: '
 
+# Spellchecking highlighting
+augroup spellbad_hl
+  autocmd!
+  autocmd ColorScheme one hi SpellBad cterm=reverse
+augroup END
+
 " VIM colorscheme
 colorscheme one              " Vim one color scheme
 set background=dark          " Dark version of vim one
@@ -51,6 +57,12 @@ set hlsearch                 " Highlight all matches
 set incsearch                " Show matches while typing
 set ignorecase               " Searches case insensitive
 set smartcase                " Except if capital letters are used
+
+" Spellchecking for Markdown Files
+augroup markdown
+  autocmd!
+  autocmd FileType markdown setlocal spell
+augroup END
 
 " Remaps
 
@@ -101,10 +113,4 @@ let g:user_emmet_install_global = 0
 augroup emmet
  autocmd!
  autocmd FileType html,css EmmetInstall
-augroup END
-
-" Spellchecking for Markdown Files
-augroup markdown
-  autocmd!
-  autocmd FileType markdown setlocal spell
 augroup END
