@@ -29,12 +29,6 @@ set undofile
 " Hide tildes at end of buffer
 let &fillchars ..= ',eob: '
 
-" Spellchecking highlighting
-augroup spellbad_hi
-  autocmd!
-  autocmd ColorScheme one hi SpellBad cterm=reverse
-augroup END
-
 " VIM colorscheme
 colorscheme one              " Vim one color scheme
 set background=dark          " Dark version of vim one
@@ -43,6 +37,10 @@ set background=dark          " Dark version of vim one
 let g:lightline = {
      \ 'colorscheme': 'one',
      \ }
+
+" Spellcheking colors
+hi clear SpellBad
+hi SpellBad ctermfg=015 ctermbg=009 guifg=#ffffff guibg=#ff0000
 
 " Indentation
 set autoindent
