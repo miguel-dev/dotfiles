@@ -101,4 +101,10 @@ let g:user_emmet_install_global = 0
 augroup emmet
  autocmd!
  autocmd FileType html,css EmmetInstall
-augroup end
+augroup END
+
+# Spellchecking for Markdown Files
+augroup markdown
+  autocmd!
+  autocmd FileType markdown setlocal spell
+augroup END
