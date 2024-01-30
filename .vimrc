@@ -1,5 +1,4 @@
 syntax enable                           " Syntax highlighting
-set spell spelllang=en_us               " Enable spellchecking
 set termguicolors                       " Enable 24 bit colors
 set list                                " Shows hidden characters
 set listchars=tab:▸\ ,eol:¬             " Textmate's symbols for tab and eol
@@ -66,6 +65,8 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>x :x<CR>
 nnoremap <Leader>Q :q!<CR>
+
+" Copy to clipboard and paste from it
 nnoremap <Leader>y "*y<CR>
 nnoremap <Leader>p "*p<CR>
 
@@ -89,10 +90,6 @@ nnoremap <leader>e <C-w><C-v><C-l>:e $MYVIMRC<CR>
 
 " Source VIM config file
 nnoremap <leader>v :source $MYVIMRC<CR>
-
-" Spelling
-nnoremap f 1z=
-nnoremap s :set spell!
 
 " Repeat an action to selected lines in visual mode
 vnoremap . :norm.<CR>
