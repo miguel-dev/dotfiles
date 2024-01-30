@@ -103,7 +103,7 @@ augroup emmet
  autocmd FileType html,css EmmetInstall
 augroup END
 
-# Spellchecking for Markdown Files
+" Spellchecking for Markdown Files
 augroup markdown
   autocmd!
   autocmd FileType markdown setlocal spell
