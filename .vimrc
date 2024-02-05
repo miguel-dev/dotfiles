@@ -69,7 +69,6 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 " Leader key mappings
-nnoremap <Space> <Nop>
 map <Space> <Leader>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
