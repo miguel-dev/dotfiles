@@ -98,7 +98,7 @@ nnoremap <C-l> <C-w>l
 nnoremap <leader>e <C-w><C-v><C-l>:e $MYVIMRC<CR>
 
 " Source VIM config file
-nnoremap <leader>v :source $MYVIMRC<CR>
+nnoremap <leader>v :source $MYVIMRC
 
 " Repeat an action to selected lines in visual mode
 vnoremap . :norm.<CR>
