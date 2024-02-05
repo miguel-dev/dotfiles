@@ -18,10 +18,10 @@ set visualbell                          " Enable visual bell
 
 " Persistent Undo
 if !isdirectory($HOME."/.vim")
-    call mkdir($HOME."/.vim", "", 0770)
+  call mkdir($HOME."/.vim", "", 0770)
 endif
 if !isdirectory($HOME."/.vim/undo-dir")
-    call mkdir($HOME."/.vim/undo-dir", "", 0700)
+  call mkdir($HOME."/.vim/undo-dir", "", 0700)
 endif
 set undodir=~/.vim/undo-dir
 set undofile
@@ -98,7 +98,7 @@ nnoremap <C-l> <C-w>l
 nnoremap <leader>e <C-w><C-v><C-l>:e $MYVIMRC<CR>
 
 " Source VIM config file
-nnoremap <leader>v :source $MYVIMRC
+nnoremap <leader>v :source $MYVIMRC<CR>
 
 " Repeat an action to selected lines in visual mode
 vnoremap . :norm.<CR>
