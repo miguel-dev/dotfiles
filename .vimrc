@@ -72,7 +72,6 @@ vnoremap <tab> %
 map <Space> <Leader>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>x :x<CR>
 nnoremap <Leader>Q :q!<CR>
 
 " Copy to clipboard and paste from it
