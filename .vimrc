@@ -7,7 +7,6 @@ set relativenumber                      " Show relative line numbers
 set cursorline                          " Highlight the line of the cursor
 set ruler                               " Line and column number of cursor
 set laststatus=2                        " Enable status line
-set noshowmode                          " Don't show the current mode
 set showcmd                             " Show partial command
 set wildmenu                            " Enhanced command line completion
 set wildmode=list:longest               " Completion mode with wildchar
