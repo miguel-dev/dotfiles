@@ -5,7 +5,6 @@ set listchars=tab:▸\ ,eol:¬             " Textmate's symbols for tab and eol
 set number                              " Show current line number
 set relativenumber                      " Show relative line numbers
 set cursorline                          " Highlight the line of the cursor
-set ruler                               " Line and column number of cursor
 set laststatus=2                        " Enable status line
 set showcmd                             " Show partial command
 set wildmenu                            " Enhanced command line completion
@@ -14,6 +13,31 @@ set colorcolumn=80                      " Color column shows line limit
 set backspace=indent,eol,start          " Set backspace to behave like in OSX
 set showmatch                           " Hightlight the matching bracket
 set visualbell                          " Enable visual bell
+
+" Statusline
+function! GitBranch()
+  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+endfunction
+
+function! StatuslineGit()
+  let l:branchname = GitBranch()
+  return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
+endfunction
+
+set statusline=
+set statusline+=%#PmenuSel#
+set statusline+=%{StatuslineGit()}
+set statusline+=%#LineNr#
+set statusline+=\ %f
+set statusline+=\ %m
+set statusline+=%=
+set statusline+=%#CursorColumn#
+set statusline+=\ %y
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\ [%{&fileformat}\]
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\ 
 
 " Persistent Undo
 if !isdirectory($HOME."/.vim")
