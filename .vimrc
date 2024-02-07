@@ -30,6 +30,7 @@ set statusline+=%{StatuslineGit()}
 set statusline+=%#CursorColumn#
 set statusline+=\ %f
 set statusline+=\ %m
+set statusline+=\ %r
 set statusline+=%=
 set statusline+=%#CursorColumn#
 set statusline+=\ %y
