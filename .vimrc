@@ -61,7 +61,7 @@ let &fillchars ..= ',eob: '
 colorscheme one              " Vim one color scheme
 set background=dark          " Dark version of vim one
 
-" Spellcheking colors
+" Spellcheking
 hi SpellBad cterm=underline
 
 " Indentation
