@@ -61,6 +61,9 @@ let &fillchars ..= ',eob: '
 colorscheme one              " Vim one color scheme
 set background=dark          " Dark version of vim one
 
+" Spellcheking colors
+hi SpellBad ctermfg=015 ctermbg=009 guifg=#ffffff guibg=#ff0000
+
 " Indentation
 set autoindent
 filetype plugin indent on
