@@ -26,12 +26,13 @@ endfunction
 set statusline=
 set statusline+=%#PmenuSel#
 set statusline+=%{StatuslineGit()}
-set statusline+=%#CursorColumn#
-set statusline+=\ %n
 set statusline+=%#LineNr#
+set statusline+=\ %n
 set statusline+=\ %f
 set statusline+=\ %L
+set statusline+=%#CursorColumn#
 set statusline+=\ %M
+set statusline+=%#LineNr#
 set statusline+=\ %R
 set statusline+=%=
 set statusline+=%#CursorColumn#
