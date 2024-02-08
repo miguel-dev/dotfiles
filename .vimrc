@@ -31,14 +31,14 @@ set statusline+=\ %n
 set statusline+=%#LineNr#
 set statusline+=\ %f
 set statusline+=\ %L
-set statusline+=\ %m
-set statusline+=\ %r
+set statusline+=\ %M
+set statusline+=\ %R
 set statusline+=%=
 set statusline+=%#CursorColumn#
 set statusline+=%Y
 set statusline+=%#LineNr#
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
-set statusline+=\ [%{&fileformat}\]
+set statusline+=\ %{&fileformat}
 set statusline+=%#CursorColumn#
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
