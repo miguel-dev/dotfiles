@@ -27,7 +27,6 @@ set statusline=
 set statusline+=%#PmenuSel#
 set statusline+=%{StatuslineGit()}
 set statusline+=%#LineNr#
-set statusline+=\ %n
 set statusline+=\ %f
 set statusline+=\ %L
 set statusline+=\ %#CursorColumn#
@@ -35,9 +34,9 @@ set statusline+=\%M
 set statusline+=%#LineNr#
 set statusline+=\ %R
 set statusline+=%=
-set statusline+=%#CursorColumn#
-set statusline+=%Y
-set statusline+=%#LineNr#
+set statusline+=%#PmenuSel#
+set statusline+=\ %Y
+set statusline+=\ %#LineNr#
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ %{&fileformat}
 set statusline+=\ %#CursorColumn#
@@ -62,10 +61,6 @@ let &fillchars ..= ',eob: '
 colorscheme one              " Vim one color scheme
 set background=dark          " Dark version of vim one
 
-" Spellcheking colors
-hi clear SpellBad
-hi SpellBad ctermfg=015 ctermbg=009 guifg=#ffffff guibg=#ff0000
-
 " Indentation
 set autoindent
 filetype plugin indent on
@@ -79,12 +74,6 @@ set hlsearch                 " Highlight all matches
 set incsearch                " Show matches while typing
 set ignorecase               " Searches case insensitive
 set smartcase                " Except if capital letters are used
-
-" Spellchecking for Markdown Files
-augroup markdown
-  autocmd!
-  autocmd FileType markdown setlocal spell
-augroup END
 
 " Remaps
 
@@ -119,9 +108,6 @@ nnoremap <C-l> <C-w>l
 
 " Open .vimrc file in a split
 nnoremap <leader>e <C-w><C-v><C-l>:e $MYVIMRC<CR>
-
-" Source VIM config file
-nnoremap <leader>v :source $MYVIMRC<CR>
 
 " Repeat an action to selected lines in visual mode
 vnoremap . :norm.<CR>
