@@ -2,7 +2,6 @@ syntax enable                           " Syntax highlighting
 set termguicolors                       " Enable 24 bit colors
 set list                                " Shows hidden characters
 set listchars=tab:▸\ ,eol:¬             " Textmate's symbols for tab and eol
-set number                              " Show current line number
 set relativenumber                      " Show relative line numbers
 set cursorline                          " Highlight the line of the cursor
 set laststatus=2                        " Enable status line
@@ -28,14 +27,19 @@ set statusline=
 set statusline+=%#PmenuSel#
 set statusline+=%{StatuslineGit()}
 set statusline+=%#CursorColumn#
+set statusline+=\ %n
+set statusline+=%#LineNr#
 set statusline+=\ %f
+set statusline+=\ %L
 set statusline+=\ %m
 set statusline+=\ %r
 set statusline+=%=
 set statusline+=%#CursorColumn#
-set statusline+=\ %y
+set statusline+=%Y
+set statusline+=%#LineNr#
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ [%{&fileformat}\]
+set statusline+=%#CursorColumn#
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\ 
