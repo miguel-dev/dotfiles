@@ -13,6 +13,7 @@ set backspace=indent,eol,start          " Set backspace to behave like in OSX
 set showmatch                           " Hightlight the matching bracket
 set belloff=all                         " Turn off all bells
 
+" Status Line
 set statusline=
 set statusline+=%#PmenuSel#
 set statusline+=\ %{gitbranch#name()}
