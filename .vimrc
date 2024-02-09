@@ -11,7 +11,7 @@ set wildmode=list:longest               " Completion mode with wildchar
 set colorcolumn=80                      " Color column shows line limit
 set backspace=indent,eol,start          " Set backspace to behave like in OSX
 set showmatch                           " Hightlight the matching bracket
-set visualbell                          " Enable visual bell
+set belloff=all                         " Turn off all bells
 
 " Statusline
 function! GitBranch()
