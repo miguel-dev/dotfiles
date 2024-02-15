@@ -74,8 +74,6 @@ set smartcase                " Except if capital letters are used
 " Leader key mappings
 map <Space> <Leader>
 nnoremap <Leader>w :w<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>Q :q!<CR>
 
 " Copy to clipboard and paste from it
 nnoremap <Leader>y "*y<CR>
