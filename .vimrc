@@ -37,10 +37,10 @@ set statusline+=\
 
 " Persistent Undo
 if !isdirectory($HOME."/.vim")
-  call mkdir($HOME."/.vim", "", 0770)
+call mkdir($HOME."/.vim", "", 0770)
 endif
 if !isdirectory($HOME."/.vim/undo-dir")
-  call mkdir($HOME."/.vim/undo-dir", "", 0700)
+call mkdir($HOME."/.vim/undo-dir", "", 0700)
 endif
 set undodir=~/.vim/undo-dir
 set undofile
@@ -70,10 +70,6 @@ set ignorecase               " Searches case insensitive
 set smartcase                " Except if capital letters are used
 
 " Remaps
-
-" Move to matching bracket
-nnoremap <tab> %
-vnoremap <tab> %
 
 " Leader key mappings
 map <Space> <Leader>
