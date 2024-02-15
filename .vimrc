@@ -71,8 +71,10 @@ set smartcase                " Except if capital letters are used
 
 " Remaps
 
-" Leader key mappings
+" Leader key mapping
 map <Space> <Leader>
+
+" Write to file
 nnoremap <Leader>w :w<CR>
 
 " Copy to clipboard and paste from it
