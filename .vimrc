@@ -1,15 +1,15 @@
 syntax enable                           " Syntax highlighting
-set termguicolors                       " Enable 24 bit colors
-set list                                " Shows hidden characters
+set termguicolors                       " 24 bit colors
+set list                                " Hidden characters
 set listchars=tab:▸\ ,eol:¬             " Textmate's symbols for tab and eol
-set relativenumber                      " Show relative line numbers
-set cursorline                          " Highlight the line of the cursor
+set relativenumber                      " Relative line numbers
+set cursorline                          " Highlight cursor line
 set laststatus=2                        " Enable status line
-set showcmd                             " Show partial command
+set showcmd                             " Partial command
 set wildmenu                            " Enhanced command line completion
 set wildmode=list:longest               " Completion mode with wildchar
 set colorcolumn=80                      " Color column shows line limit
-set backspace=indent,eol,start          " Set backspace to behave like in OSX
+set backspace=indent,eol,start          " OSX's like Backspace
 set showmatch                           " Hightlight the matching bracket
 set belloff=all                         " Turn off all bells
 
