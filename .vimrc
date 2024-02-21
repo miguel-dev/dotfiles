@@ -1,7 +1,9 @@
 syntax enable                           " Syntax highlighting
 set termguicolors                       " 24 bit colors
+set belloff=all                         " Turn off all bells
 set list                                " Hidden characters
 set listchars=tab:▸\ ,eol:¬             " Textmate's symbols for tab and eol
+set history=200                         " Keep 200 commands or search patterns
 set relativenumber                      " Relative line numbers
 set cursorline                          " Highlight cursor line
 set laststatus=2                        " Enable status line
@@ -10,7 +12,6 @@ set wildmenu                            " Enhanced command line completion
 set colorcolumn=80                      " Color column shows line limit
 set backspace=indent,eol,start          " OSX's like Backspace
 set showmatch                           " Hightlight the matching bracket
-set belloff=all                         " Turn off all bells
 set ttimeout
 set ttimeoutlen=100                     " Quicker Esc
 
