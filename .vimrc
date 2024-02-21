@@ -7,11 +7,12 @@ set cursorline                          " Highlight cursor line
 set laststatus=2                        " Enable status line
 set showcmd                             " Partial command
 set wildmenu                            " Enhanced command line completion
-set wildmode=list:longest               " Completion mode with wildchar
 set colorcolumn=80                      " Color column shows line limit
 set backspace=indent,eol,start          " OSX's like Backspace
 set showmatch                           " Hightlight the matching bracket
 set belloff=all                         " Turn off all bells
+set ttimeout
+set ttimeoutlen=100                     " Quicker Esc
 
 " Status Line
 set statusline=
@@ -56,8 +57,8 @@ set background=dark          " Dark version of vim one
 hi SpellBad cterm=underline
 
 " Indentation
-set autoindent
 filetype plugin indent on
+set autoindent
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -68,6 +69,9 @@ set hlsearch                 " Highlight all matches
 set incsearch                " Show matches while typing
 set ignorecase               " Searches case insensitive
 set smartcase                " Except if capital letters are used
+
+" Matchit plugin
+packadd! matchit
 
 " Remaps
 
