@@ -14,6 +14,8 @@ set backspace=indent,eol,start          " OSX's like Backspace
 set showmatch                           " Hightlight the matching bracket
 set ttimeout
 set ttimeoutlen=100                     " Quicker Esc
+set nolangremap                         " No langmap on chars from mapping
+set nrformats-=octal                    " Numbers starting from zero not octal
 
 " Status Line
 set statusline=
