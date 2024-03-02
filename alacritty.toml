@@ -12,7 +12,7 @@ normal = { family = "Jetbrains Mono", style = "Light" }
 bold = { style = "Regular" }
 
 [cursor]
-style = {blinking = "On"} 
+style = {blinking = "On"}
 
 [mouse]
 hide_when_typing = true
