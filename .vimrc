@@ -84,10 +84,6 @@ map <Space> <Leader>
 " Write to file
 nnoremap <Leader>w :w<CR>
 
-" Copy to clipboard and paste from it
-nnoremap <Leader>y "*y<CR>
-nnoremap <Leader>p "*p<CR>
-
 " Remove highlighting after search
 nnoremap <silent> <leader>l :nohlsearch<CR><C-L>
 
