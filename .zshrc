@@ -108,6 +108,26 @@ fi
 if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
   source ${ZIM_HOME}/zimfw.zsh init -q
 fi
+
+# Lazy Load for NVM
+export NVM_LAZY_LOAD=true
+export NVM_AUTO_USE=true
+
+# Zoxide Setup
+eval "$(zoxide init zsh)"
+
+# Fzf Setup
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Bat Setup
+export BAT_THEME="OneHalfDark"
+
+# Pure Prompt Setup
+export LANG=en_US.UTF-8  
+export LC_ALL=en_US.UTF-8
+zmodload zsh/nearcolor
+zstyle :prompt:pure:prompt:success color '#FF8C00'
+
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
 
@@ -135,17 +155,13 @@ alias tn="t new -t"
 alias ta="t a -t"
 alias tls="t ls"
 
-# Zoxide Setup
-eval "$(zoxide init zsh)"
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/miguelcortes/.lmstudio/bin"
+# End of LM Studio CLI section
 
-# Fzf Setup
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Bat Setup
-export BAT_THEME="OneHalfDark"
-
-# Pure Prompt Setup
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-zmodload zsh/nearcolor
-zstyle :prompt:pure:prompt:success color '#FF8C00'
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.4.6/bin:$PATH"
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
